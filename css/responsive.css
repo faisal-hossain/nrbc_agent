@@ -1,0 +1,50 @@
+/* lg */ 
+@media (min-width: 1200px) {
+	
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+	
+    .card {
+        padding: 10px 0;
+    }
+    .card .title{
+        margin:0 0 10px
+    }
+    .card .input-container {
+        margin: 0 60px 30px;
+    }
+    .card .button-container button {
+        padding: 10px 60px;
+    }
+
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+
+	
+}
+
+
+@media (max-width: 320px) {
+   
+  .card .button-container button {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 10px 40px;
+  }
+
+}

@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>AgentBanking NRBC</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+     <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet">
+
+    <!-- Preloader Css -->
+    <link href="plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--  -->
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+
+
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="md-preloader pl-size-md">
+                <svg viewbox="0 0 75 75">
+                    <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
+                </svg>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/agentbanking-small.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    </li>
+                    <!-- #END# Call Search -->
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">notifications</i>
+                            <span class="label-count">7</span>
+                        </a>
+                    </li>
+                    <!-- #END# Notifications -->
+                    <li>
+                        <a href="" class="user">
+                            <img src="images/user.png" width="24" height="24" alt="User" />   
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="userinfo">
+                            <span>John Doe </span><i class="material-icons">arrow_drop_down</i> 
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="home.html">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">person_add</i>
+                            <span>Account Opening</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>Individual Private</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="">ABC Card</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Account Number</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>Organization</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">recent_actors</i>
+                            <span>Customer Services</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">ABC Card</a>
+                            </li>
+                            <li>
+                                <a href="">Account Number</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">assignment</i>
+                            <span>IFR</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">IFR Request</a>
+                            </li>
+                            <li>
+                                <a href="">IFR Withdrawal</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="pages/helper-classes.html">
+                            <i class="material-icons">layers</i>
+                            <span>Bill Collection</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">stay_current_portrait</i>
+                            <span>Mobile Top-Up</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">Airtel</a>
+                            </li>
+                            <li>
+                                <a href="">Banglalink</a>
+                            </li>
+                            <li>
+                                <a href="">Grameen Phone</a>
+                            </li>
+                            <li>
+                                <a href="">Robi</a>
+                            </li>
+                            <li>
+                                <a href="">Teletalk</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="material-icons">sync</i>
+                            <span>Reset POS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>Agent Tools</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="">Agent Balance Inquiry</a>
+                            </li>
+                            <li>
+                                <a href="">Agent Mini Statement</a>
+                            </li>
+                            <li>
+                                <a href="">Reprint Receipt</a>
+                            </li>
+                            <li>
+                                <a href="">Check Device Connectivity</a>
+                            </li>
+                            <li>
+                                <a href="">Get Location</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2016 <a href="javascript:void(0);">AgentBanking NRBC.</a> <br> <span>Version: </span> 0.0.1
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+        
+    </section>
+
+    
+
+   <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+</body>
+
+</html>

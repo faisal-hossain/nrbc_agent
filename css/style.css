@@ -493,7 +493,55 @@ section.content {
       overflow: hidden;
       margin-top: 5px;
       font-size: 13px; }
-  
+  .sidebar .user-info {
+    padding: 13px 15px 12px 15px;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 1px solid #e9e9e9;
+    background: url("../images/user-img-background.jpg") no-repeat no-repeat;
+    height: 135px; }
+    .sidebar .user-info .image {
+      margin-right: 12px;
+      display: inline-block; }
+      .sidebar .user-info .image img {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        vertical-align: bottom !important; }
+    .sidebar .user-info .info-container {
+      cursor: default;
+      display: block;
+      position: relative;
+      top: 25px; }
+      .sidebar .user-info .info-container .name {
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+        max-width: 200px;
+        color: #fff; }
+      .sidebar .user-info .info-container .email {
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+        max-width: 200px;
+        color: #fff; }
+      .sidebar .user-info .info-container .user-helper-dropdown {
+        position: absolute;
+        right: -3px;
+        bottom: -12px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+        cursor: pointer;
+        color: #fff; }
   .sidebar .menu {
     position: relative;
     overflow-y: auto;
@@ -501,6 +549,8 @@ section.content {
     .sidebar .menu .list {
       list-style: none;
       padding-left: 0; }
+      .sidebar .menu .list li.active > :first-child span {
+        font-weight: bold; }
       .sidebar .menu .list .header {
         background: #eee;
         font-size: 12px;
@@ -536,7 +586,18 @@ section.content {
         -o-transform: scale(0);
         -webkit-transform: scale(0);
         transform: scale(0); }
-      
+      .sidebar .menu .list .menu-toggle.toggled:before {
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        -webkit-transform: scale(0);
+        transform: scale(0); }
+      .sidebar .menu .list .menu-toggle.toggled:after {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1); }
       .sidebar .menu .list a {
         color: #747474;
         position: relative;
@@ -546,7 +607,10 @@ section.content {
         padding: 10px 13px; }
         .sidebar .menu .list a:hover, .sidebar .menu .list a:active, .sidebar .menu .list a:focus {
           text-decoration: none !important; }
-        
+        .sidebar .menu .list a small {
+          position: absolute;
+          top: calc(50% - 7.5px);
+          right: 15px; }
         .sidebar .menu .list a span {
           margin: 7px 0 7px 12px;
           color: #333;
@@ -565,9 +629,54 @@ section.content {
           padding-left: 55px;
           padding-top: 7px;
           padding-bottom: 7px; }
-        
+        .sidebar .menu .list .ml-menu li.active a.toggled:not(.menu-toggle) {
+          font-weight: 600;
+          margin-left: 5px; }
+          .sidebar .menu .list .ml-menu li.active a.toggled:not(.menu-toggle):before {
+            content: '\E315';
+            font-family: 'Material Icons';
+            position: relative;
+            font-size: 21px;
+            height: 20px;
+            top: -5px;
+            right: 0px; }
         .sidebar .menu .list .ml-menu li .ml-menu li a {
           padding-left: 80px; }
+        .sidebar .menu .list .ml-menu li .ml-menu .ml-menu li a {
+          padding-left: 95px; }
+
+.right-sidebar {
+  width: 280px;
+  height: calc(100vh - 70px);
+  position: fixed;
+  right: -300px;
+  top: 70px;
+  background: #fdfdfd;
+  z-index: 11 !important;
+  -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .right-sidebar.open {
+    right: 0; }
+  .right-sidebar .nav-tabs {
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    margin-left: 2px; }
+    .right-sidebar .nav-tabs li {
+      text-align: center; }
+      .right-sidebar .nav-tabs li > a {
+        margin-right: 0; }
+      .right-sidebar .nav-tabs li:first-child {
+        width: 45%; }
+      .right-sidebar .nav-tabs li:last-child {
+        width: 55%; }
 
 
 

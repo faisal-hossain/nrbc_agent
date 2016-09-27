@@ -456,7 +456,7 @@ section.content {
   transition: all 0.5s;
   font-family: "Roboto", sans-serif;
   background: #fdfdfd;
-  width: 243px;
+  width: 180px;
   overflow: hidden;
   display: inline-block;
   height: calc(100vh - 70px);
@@ -473,10 +473,10 @@ section.content {
     bottom: 0;
     width: 100%;
     border-top: 1px solid #eee;
-    padding: 15px;
+    padding: 8px;
     overflow: hidden; }
     .sidebar .legal .copyright {
-      font-size: 13px;
+      font-size: 12px;
       white-space: nowrap;
       -ms-text-overflow: ellipsis;
       -o-text-overflow: ellipsis;
@@ -557,7 +557,7 @@ section.content {
         font-weight: 600;
         padding: 8px 16px; }
       .sidebar .menu .list i.material-icons {
-        margin-top: 4px; }
+        margin-top: 0px; }
       .sidebar .menu .list .menu-toggle:after, .sidebar .menu .list .menu-toggle:before {
         position: absolute;
         top: calc(50% - 14px);
@@ -612,7 +612,7 @@ section.content {
           top: calc(50% - 7.5px);
           right: 15px; }
         .sidebar .menu .list a span {
-          margin: 7px 0 7px 12px;
+          margin: 4px 0 0px 5px;
           color: #333;
           font-weight: bold;
           font-size: 14px;
@@ -626,9 +626,9 @@ section.content {
           font-size: 14px;
           margin: 3px 0 1px 6px; }
         .sidebar .menu .list .ml-menu li a {
-          padding-left: 55px;
-          padding-top: 7px;
-          padding-bottom: 7px; }
+          padding-left: 45px;
+          padding-top: 5px;
+          padding-bottom: 5px; }
         .sidebar .menu .list .ml-menu li.active a.toggled:not(.menu-toggle) {
           font-weight: 600;
           margin-left: 5px; }

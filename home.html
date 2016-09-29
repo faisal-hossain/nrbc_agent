@@ -27,6 +27,7 @@
     <link href="plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
 
     <!-- Custom Css -->
+    <link href="css/input.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!--  -->
@@ -137,7 +138,7 @@
                                 <a href="">ABC Card</a>
                             </li>
                             <li>
-                                <a href="">A/C No.</a>
+                                <a href="" data-toggle="modal" data-target="#smallModal">A/C No.</a>
                             </li>
                         </ul>
                     </li>
@@ -209,6 +210,7 @@
                 </ul>
             </div>
             <!-- #Menu -->
+
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
@@ -220,6 +222,32 @@
         <!-- #END# Left Sidebar -->
         
     </section>
+
+    <!-- Small Size -->
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="smallModalLabel">Search By Bank A/C No.</h4>
+                </div>
+                <form action="customer-sr.html">
+                    <div class="modal-body">
+
+                        <div class="input-container">
+                            <input type="text" id="ac_no" required="required"/>
+                            <label for="ac_no">A/C No.</label>
+                            <div class="bar"></div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-link waves-effect">Search Customer</button>
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     
 

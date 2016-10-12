@@ -122,7 +122,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);">
+                                <a href="" data-toggle="modal" data-target="#openac-search">
                                     <span>Individual</span>
                                 </a>
                             </li>
@@ -232,7 +232,7 @@
 
         <div class="container-fluid">
             
-            <div class="card">
+            <div class="card-inner">
                 <div class="header bg-green">
                     <h2>Search Result of Customer</h2>
                 </div>
@@ -422,6 +422,83 @@
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-link waves-effect">Search Customer</button>
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Small Size -->
+    <div class="modal fade" id="openac-search" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="smallModalLabel">Individual Search for A/C</h4>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+
+                        <form class="form-horizontal">
+
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 form-control-label">
+                                    <label for="password_2">National ID:</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" id="password_2" class="form-control text-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 form-control-label">
+                                    <label for="password_2">Passport No.:</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" id="password_2" class="form-control text-right" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 form-control-label">
+                                    <label for="password_2">TIN:</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" id="password_2" class="form-control text-right" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 form-control-label">
+                                    <label for="password_2">Birth Reg. No.:</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" id="password_2" class="form-control text-right">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link waves-effect">Search</button>
                         <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Close</button>
                     </div>
                 </form>

@@ -1,4 +1,331 @@
-﻿
+﻿@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+body {
+  background-color: #f58121;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: auto; 
+}
+
+
+/* Login Logo */
+.logo{
+    margin-bottom: 30px;
+    padding: 0px 20px;
+}
+
+.logo img{
+  margin: 0 auto
+}
+.log {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px
+}
+
+
+/* Card For Login */
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 30px 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.02);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  z-index: 100
+}
+.card:first-child {
+  background: #fafafa;
+  height: 10px;
+  border-radius: 2px 2px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.card .title {
+  position: relative;
+  z-index: 1;
+  border-left: 5px solid #3AB14F;
+  margin: 0 0 35px;
+  padding: 10px 0 10px 50px;
+  color: #3AB14F;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+}
+.card .input-container {
+  position: relative;
+  margin: 0 60px 50px;
+}
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  color: #212121;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card .input-container input:focus ~ label {
+  color: #09784A;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.card .input-container input:valid ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #757575;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 100%;
+  height: 1px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: #F38132;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.card .input-container .bar:before {
+  left: 50%;
+}
+.card .input-container .bar:after {
+  right: 50%;
+}
+.card .button-container {
+  margin: 0 60px;
+  text-align: center;
+}
+.card .button-container button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: 0;
+  border: 1px solid #3AB14F;
+  padding: 20px 60px;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button span {
+  position: relative;
+  z-index: 1;
+  color: #3AB14F;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: #3AB14F;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
+  border-color: #3AB14F;
+  background: #3AB14F;
+  color: #fff
+}
+.card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
+  color: #3AB14F;
+  color: #fff;
+}
+.card .button-container button:active span, .card .button-container button:focus span {
+  color: #ffffff;
+}
+.card .button-container button:active:before, .card .button-container button:focus:before {
+  opacity: 1;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+}
+.card .footer {
+  margin: 20px 0 0;
+  color: #d3d3d3;
+  font-size: 16px;
+  text-align: center;
+}
+.card .footer a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-weight: 300;
+}
+.card .footer a:hover {
+  color: #bababa;
+}
+
+
+/* Bubble Animation IN CSS3 Start*/
+
+.bg-bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(231, 76, 60, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+  background-color: rgba(50, 176, 76, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-color: rgba(8, 120, 72, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background-color: rgba(244, 130, 33, 0.3);
+}
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1400px) rotate(600deg);
+            transform: translateY(-1400px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1400px) rotate(600deg);
+            transform: translateY(-1400px) rotate(600deg);
+  }
+}
+
+/* Bubble Animation IN CSS3 END */
+
+
+
 .user img{
   border-radius:100%
 }
@@ -7,6 +334,7 @@
   position: relative;
   bottom:8px;
 }
+
 /* Navbar ====================================== */
 
 .navbar {
@@ -231,14 +559,7 @@
     margin-left: 20px; } }
 
 /* General ===================================== */
-body {
-  background-color: #f58121;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  font-family: 'Roboto', Arial, Tahoma, sans-serif;
-  overflow: hidden; }
+
 
 h1,
 h2,
@@ -777,113 +1098,117 @@ section.content {
     color: #fff !important; }
 
 
-  /* Card ======================================== */
-.card {
+ /* card-inner ======================================== */
+.card-inner {
   background: #fff;
   min-height: 50px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   margin-bottom: 30px; }
 
-  .card .card-inside-title {
+  .card-inner .card-inner-inside-title {
     margin-top: 25px;
     margin-bottom: 15px;
     display: block;
     font-size: 15px;
     color: #000; }
-    .card .card-inside-title small {
+    .card-inner .card-inner-inside-title small {
       color: #999;
       display: block;
       font-size: 11px;
       margin-top: 5px; }
-      .card .card-inside-title small a {
+      .card-inner .card-inner-inside-title small a {
         color: #777;
         font-weight: bold; }
-  .card .card-inside-title:first-child {
+  .card-inner .card-inner-inside-title:first-child {
     margin-top: 0; }
   
-  .card .bg-green {
+  .card-inner .bg-green {
     border-bottom: none !important;
     color: #fff !important; }
 
-    .card .bg-green h2,
-    .card .bg-green {
+    .card-inner .bg-green h2,
+    .card-inner .bg-green {
       color: #fff !important; }
-  .card .header {
+  .card-inner .header {
     color: #555;
     padding: 15px 20px;
     position: relative;
     border-bottom: 1px solid rgba(204, 204, 204, 0.35); }
     
-    .card .header h2 {
+    .card-inner .header h2 {
       margin: 0;
       font-size: 18px;
       font-weight: normal;
       color: #111; }
-  .card .body {
+  .card-inner .body {
     font-size: 14px;
     color: #555;
-    padding: 20px; }
-    .card .body .col-xs-1,
-    .card .body .col-sm-1,
-    .card .body .col-md-1,
-    .card .body .col-lg-1 {
+    padding: 20px 20px 0; }
+    .card-inner .body .col-xs-1,
+    .card-inner .body .col-sm-1,
+    .card-inner .body .col-md-1,
+    .card-inner .body .col-lg-1 {
       margin-bottom: 20px; }
-    .card .body .col-xs-2,
-    .card .body .col-sm-2,
-    .card .body .col-md-2,
-    .card .body .col-lg-2 {
+    .card-inner .body .col-xs-2,
+    .card-inner .body .col-sm-2,
+    .card-inner .body .col-md-2,
+    .card-inner .body .col-lg-2 {
       margin-bottom: 20px; }
-    .card .body .col-xs-3,
-    .card .body .col-sm-3,
-    .card .body .col-md-3,
-    .card .body .col-lg-3 {
+    .card-inner .body .col-xs-3,
+    .card-inner .body .col-sm-3,
+    .card-inner .body .col-md-3,
+    .card-inner .body .col-lg-3 {
       margin-bottom: 20px; }
-    .card .body .col-xs-4,
-    .card .body .col-sm-4,
-    .card .body .col-md-4,
-    .card .body .col-lg-4 {
+    .card-inner .body .col-xs-4,
+    .card-inner .body .col-sm-4,
+    .card-inner .body .col-md-4,
+    .card-inner .body .col-lg-4 {
       margin-bottom: 20px; }
-    .card .body .col-xs-5,
-    .card .body .col-sm-5,
-    .card .body .col-md-5,
-    .card .body .col-lg-5 {
+    .card-inner .body .col-xs-5,
+    .card-inner .body .col-sm-5,
+    .card-inner .body .col-md-5,
+    .card-inner .body .col-lg-5 {
       margin-bottom: 10px; }
-    .card .body .col-xs-6,
-    .card .body .col-sm-6,
-    .card .body .col-md-6,
-    .card .body .col-lg-6 {
+    .card-inner .body .col-xs-6,
+    .card-inner .body .col-sm-6,
+    .card-inner .body .col-md-6,
+    .card-inner .body .col-lg-6 {
       margin-bottom: 20px; }
-    .card .body .col-xs-7,
-    .card .body .col-sm-7,
-    .card .body .col-md-7,
-    .card .body .col-lg-7 {
+    .card-inner .body .col-xs-7,
+    .card-inner .body .col-sm-7,
+    .card-inner .body .col-md-7,
+    .card-inner .body .col-lg-7 {
       margin-bottom: 10px; }
-    .card .body .col-xs-8,
-    .card .body .col-sm-8,
-    .card .body .col-md-8,
-    .card .body .col-lg-8 {
+    .card-inner .body .col-xs-8,
+    .card-inner .body .col-sm-8,
+    .card-inner .body .col-md-8,
+    .card-inner .body .col-lg-8 {
       margin-bottom: 5px; }
-    .card .body .col-xs-9,
-    .card .body .col-sm-9,
-    .card .body .col-md-9,
-    .card .body .col-lg-9 {
+    .card-inner .body .col-xs-9,
+    .card-inner .body .col-sm-9,
+    .card-inner .body .col-md-9,
+    .card-inner .body .col-lg-9 {
+      margin-bottom: 0px; }
+    .card-inner .body .col-xs-10,
+    .card-inner .body .col-sm-10,
+    .card-inner .body .col-md-10,
+    .card-inner .body .col-lg-10 {
       margin-bottom: 20px; }
-    .card .body .col-xs-10,
-    .card .body .col-sm-10,
-    .card .body .col-md-10,
-    .card .body .col-lg-10 {
+    .card-inner .body .col-xs-11,
+    .card-inner .body .col-sm-11,
+    .card-inner .body .col-md-11,
+    .card-inner .body .col-lg-11 {
       margin-bottom: 20px; }
-    .card .body .col-xs-11,
-    .card .body .col-sm-11,
-    .card .body .col-md-11,
-    .card .body .col-lg-11 {
+    .card-inner .body .col-xs-12,
+    .card-inner .body .col-sm-12,
+    .card-inner .body .col-md-12,
+    .card-inner .body .col-lg-12 {
       margin-bottom: 20px; }
-    .card .body .col-xs-12,
-    .card .body .col-sm-12,
-    .card .body .col-md-12,
-    .card .body .col-lg-12 {
-      margin-bottom: 20px; }
+
+.individual-search{
+  margin: 100px 0px;
+}
 
 
 /* Breadcrumbs ================================= */
@@ -1270,6 +1595,63 @@ section.content {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   background-color: transparent; }
+
+
+/* Bootstrap Select ============================ */
+.bootstrap-select {
+  box-shadow: none !important;
+  border-bottom: 1px solid #ddd !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  .bootstrap-select .dropdown-toggle:focus, .bootstrap-select .dropdown-toggle:active {
+    outline: none !important; }
+  .bootstrap-select .bs-searchbox,
+  .bootstrap-select .bs-actionsbox,
+  .bootstrap-select .bs-donebutton {
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #e9e9e9; }
+    .bootstrap-select .bs-searchbox .form-control,
+    .bootstrap-select .bs-actionsbox .form-control,
+    .bootstrap-select .bs-donebutton .form-control {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      -ms-box-shadow: none !important;
+      box-shadow: none !important;
+      border: none;
+      margin-left: 30px; }
+  .bootstrap-select .bs-searchbox {
+    position: relative; }
+    .bootstrap-select .bs-searchbox:after {
+      content: '\E8B6';
+      font-family: 'Material Icons';
+      position: absolute;
+      top: 0;
+      left: 10px;
+      font-size: 25px; }
+  .bootstrap-select ul.dropdown-menu {
+    margin-top: 0 !important; }
+  .bootstrap-select .dropdown-menu li.selected a {
+    background-color: #eee !important;
+    color: #555 !important; }
+  .bootstrap-select .dropdown-menu .active a {
+    background-color: transparent;
+    color: #333 !important; }
+  .bootstrap-select .dropdown-menu .notify {
+    background-color: #F44336 !important;
+    color: #fff !important;
+    border: none !important; }
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  margin-top: 9px; }
+
+
+
 
 
 

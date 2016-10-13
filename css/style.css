@@ -1649,8 +1649,35 @@ fieldset[disabled] .form-control {
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
   margin-top: 9px; }
+.bootstrap-select > .dropdown-toggle {
+    border: none;
+}
+
+.bootstrap-select > .dropdown-toggle:hover, .bootstrap-select > .dropdown-toggle:focus, .bootstrap-select > .dropdown-toggle:active {
+    background: transparent
+}
+
+.bootstrap-select.open .dropdown-toggle{
+  box-shadow: none;
+  background: transparent !important;
+}
 
 
+.bootstrap-select:active:hover, 
+.bootstrap-select.active:hover, 
+.open > .dropdown-toggle.bootstrap-select:hover, 
+.bootstrap-select:active:focus, 
+.bootstrap-select.active:focus, 
+.open > .dropdown-toggle.bootstrap-select:focus, 
+.bootstrap-select:active.focus, 
+.bootstrap-select.active.focus, 
+.open > .dropdown-toggle.bootstrap-select.focus{
+  background: transparent !important;
+  border: none;
+}
+
+.dropdown-menu {
+    top: 20%;}
 
 
 
